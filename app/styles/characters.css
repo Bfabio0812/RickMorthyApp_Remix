@@ -1,0 +1,40 @@
+.container {
+    text-align: center;
+    margin: 20px;
+}
+
+.character-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.character-card {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.character-card:hover {
+    transform: scale(1.1);
+}
+
+.character-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.character-card p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
